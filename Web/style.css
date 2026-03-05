@@ -1,102 +1,55 @@
-/* Variabel Warna */
-:root {
-    --primary: #2563eb;
-    --dark: #1e293b;
-    --light: #f8fafc;
-    --success: #22c55e;
-    --error: #ef4444;
+body{
+font-family: Arial, sans-serif;
+background:#f5f7ff;
+text-align:center;
+margin:0;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f1f5f9;
-    margin: 0;
-    color: var(--dark);
+header{
+background:#4f6df5;
+color:white;
+padding:40px;
 }
 
-header {
-    background: var(--primary);
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:40px;
 }
 
-.container {
-    max-width: 850px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+cursor:pointer;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+font-size:20px;
 }
 
-.card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
+.card:hover{
+transform:scale(1.05);
+background:#e9edff;
 }
 
-/* Responsive Iframe */
-.materi-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    border-radius: 8px;
-    overflow: hidden;
+.kuis{
+background:#ffe082;
 }
 
-.materi-wrapper iframe {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
+iframe{
+width:90%;
+height:600px;
+border:none;
+margin-top:20px;
 }
 
-/* Style Kuis */
-.question {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.options-grid {
-    display: grid;
-    gap: 10px;
-}
-
-.option-item {
-    padding: 12px 15px;
-    border: 2px solid #e2e8f0;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.option-item:hover {
-    border-color: var(--primary);
-    background-color: #eff6ff;
-}
-
-.option-item.selected {
-    border-color: var(--primary);
-    background-color: var(--primary);
-    color: white;
-}
-
-.btn-primary {
-    margin-top: 1.5rem;
-    background: var(--primary);
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.btn-primary:hover {
-    background: #1d4ed8;
-}
-
-#feedback-message {
-    margin-top: 1rem;
-    font-weight: 500;
+button{
+padding:10px 20px;
+border:none;
+border-radius:10px;
+background:#4f6df5;
+color:white;
+font-size:16px;
+cursor:pointer;
 }
