@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Portal Belajar Mandiri</h1>
+</header>
+
+<div class="container">
+    <section class="card">
+        <h2>📖 Materi Slide</h2>
+        <div class="materi-wrapper">
+            <iframe src="https://docs.google.com/presentation/d/1Wou6wBnehSSG4spUyIM-dV3K37yJOt5o/edit?usp=drive_link&ouid=101601859047344532676&rtpof=true&sd=true" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+    </section>
+
+    <section class="card quiz-section">
+        <h2>🧠 Kuis Pemahaman</h2>
+        <div id="quiz-container">
+            <p id="question-text" class="question">Memuat pertanyaan...</p>
+            <div id="options-container" class="options-grid">
+                </div>
+            <div class="footer-quiz">
+                <button id="submit-btn" class="btn-primary">Kirim Jawaban</button>
+                <p id="feedback-message"></p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
